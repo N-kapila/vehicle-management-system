@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D172D7E4-340D-449E-BB57-FA7520937B14}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Vehicle_and_Emaployee_Management_System</RootNamespace>
+    <AssemblyName>Vehicle and Emaployee Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin Interface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Interface.Designer.cs">
+      <DependentUpon>Admin Interface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin login.Designer.cs">
+      <DependentUpon>Admin login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Emp Interface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Emp Interface.Designer.cs">
+      <DependentUpon>Emp Interface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="emp search model.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emp search model.Designer.cs">
+      <DependentUpon>emp search model.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Login.Designer.cs">
+      <DependentUpon>Employee Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enter employee data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enter employee data.Designer.cs">
+      <DependentUpon>enter employee data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enter vehicle details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enter vehicle details.Designer.cs">
+      <DependentUpon>Enter vehicle details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Salary Calculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salary Calculator.Designer.cs">
+      <DependentUpon>Salary Calculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="search employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="search employee.Designer.cs">
+      <DependentUpon>search employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="search vehicle details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="search vehicle details.Designer.cs">
+      <DependentUpon>search vehicle details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehicle Profile.Designer.cs">
+      <DependentUpon>Vehicle Profile.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin Interface.resx">
+      <DependentUpon>Admin Interface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin login.resx">
+      <DependentUpon>Admin login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emp Interface.resx">
+      <DependentUpon>Emp Interface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emp search model.resx">
+      <DependentUpon>emp search model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Login.resx">
+      <DependentUpon>Employee Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enter employee data.resx">
+      <DependentUpon>enter employee data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enter vehicle details.resx">
+      <DependentUpon>Enter vehicle details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Salary Calculator.resx">
+      <DependentUpon>Salary Calculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="search employee.resx">
+      <DependentUpon>search employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="search vehicle details.resx">
+      <DependentUpon>search vehicle details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicle Profile.resx">
+      <DependentUpon>Vehicle Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="vehicleandemployeemanagement.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vehicleandemployeemanagement_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>vehicleandemployeemanagement.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
